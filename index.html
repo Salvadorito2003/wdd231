@@ -9,14 +9,17 @@
     <link rel="stylesheet" href="styles/larger.css">
     <link rel="stylesheet" href="styles/small.css">
     <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/course.js" defer></script>
 </head>
 <body>
     <header>
+        <button id="menu">Menu</button>
         <nav>
-            <ul>
-                <li><a href="#" name="home">Home</a></li>
-                <li><a href="#" name="chamber-projects">Chamber Projects</a></li>
-                <li><a href="#" name="final-project">Final Project</a></li>
+            <ul class="navigation">
+                <li><a href="#" id="home">Home</a></li>
+                <li><a href="#" id="chamber-projects">Chamber Projects</a></li>
+                <li><a href="#" id="final-project">Final Project</a></li>
             </ul>
         </nav>
     </header>
@@ -24,7 +27,7 @@
         <h1>Home</h1>
         <section class="about-me">
             <h2>About me</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut earum pariatur, veritatis ut quibusdam repudiandae cum explicabo suscipit delectus atque.</p>           
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non tempore ipsa veniam consectetur saepe fugiat.Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut earum pariatur, veritatis ut quibusdam repudiandae cum explicabo suscipit delectus atque.</p>           
         </section>
         <section class="student-photo">
             <h2>Student Photo</h2>
@@ -32,13 +35,21 @@
         </section>
         <section class="courses">
             <h2>Web Certificate Courses</h2>
+            <div class="course-buttons">
+                <button id="all">All Courses</button>
+                <button id="cse">CSE Courses</button>
+                <button id="wdd">WDD Courses</button>
+            </div>
+            <div id="courses">
+
+            </div>
         </section>
     </main>
     <footer>
         <ul>
-            <li><a href="#" name="git-hub"><img src="" alt="git-hub-icon"></a></li>
-            <li><a href="#" name="linked-in"><img src="" alt="linked-in-icon"></a></li>
-            <li><a href="#" name="instagram"><img src="" alt="instagram-icon"></a></li>
+            <li><a href="#" id="git-hub"><img src="images/github.svg" alt="git-hub-icon"></a></li>
+            <li><a href="#" id="linked-in"><img src="images/linkedin.svg" alt="linked-in-icon"></a></li>
+            <li><a href="#" id="instagram"><img src="images/instagram.svg" alt="instagram-icon"></a></li>
         </ul>
         <p><span id="currentyear"></span> | Tobias Salvador Joaquin Aguilar | Buenos Aires, Argentina</p>
         <p id="lastmodified"></p>

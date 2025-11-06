@@ -1,0 +1,188 @@
+:root {
+    --yellow: #eff963;
+    --yellow2: #505144;
+    --gold: #7c760c;
+}
+* {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
+    max-width: 100%;
+    background-color: var(--yellow);
+    
+}
+
+header, main, footer {
+    background-color: var(--yellow2);
+    padding: 5px;
+    border-radius: 10px;
+}
+
+
+nav li {
+    margin: 2px 0px;
+    list-style: none;
+    width:100%;
+    background-color: var(--yellow2);
+}
+nav a {
+    display:block;
+    padding: 10px;
+    border: solid black 1px;
+    width: 100%;
+    margin-right: 0;
+    background-color: var(--yellow2);
+    text-decoration: none;
+    color: white;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+nav a:hover {
+    background-color: white;
+    color: black;
+}
+nav::after {
+    display:none;
+}
+.navigation {
+    
+    width: 100%;
+    text-align: left;
+    font-size: 20px;
+    padding:0;
+    margin: 0;
+}
+.navigation.open {
+    display: flex;
+}
+nav ul {
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    padding:0;
+    margin: 0;
+}
+
+@media screen and (max-width: 600px) {
+    main {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .about-me, .student-photo, .courses {
+        height: auto;
+        max-width: 95%;
+        min-width: 95%;
+    }
+    .student-photo img {
+        max-height: 300px;
+        max-width: 90%;
+    }
+    .about-me p {
+        padding: 10px;
+    }
+    #menu {
+        width: 100%;
+        background-color: var(--yellow2);
+        color:white;
+        font-size: 20px;;
+        border-radius: 10px;
+    }
+    .navigation {
+        display: none;
+        flex-direction: column;
+        background-color: var(--yellow2);
+    }
+    .courses {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .course-buttons {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+.about-me, .student-photo, .courses {
+    margin: auto auto 15px auto;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.student-photo img {
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+h1 {
+    padding-left: 5px;
+    border-radius: 10px;;
+}
+h2 {
+    margin-top: 0;
+    padding:10px;
+    background-color: var(--gold);
+    border-radius: 10px;
+}
+
+footer {
+    border-radius: 10px;
+    border: 2px solid black;
+    text-align: center;
+    
+}
+footer li {
+    list-style: none;
+    border-radius: 10px;
+}
+footer ul {
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+footer img {
+    max-width: 50px;
+    border-radius: 10px;
+    list-style: none;
+}
+footer p {
+    font-size: 15px;
+    border-radius: 10px;
+}
+.courses button {
+    padding: 10px;
+}
+.active-link {
+    background-color: var(--gold);
+    color:white;
+}
+.courses button:hover {
+    background-color: var(--gold);
+    color: white;
+}
+#completed, #completed h3 {
+    background-color: var(--gold);
+    border-radius: 10px;
+    color: white;
+}
+#completed, #incompleted {
+    margin: 5px;
+}
+
+#incompleted, #incompleted h3 {
+    background-color: var(--yellow2);
+    color: white;
+    border-radius: 10px;
+}
+
+h3 {
+    padding: 0 8px;
+}
+
+.course-buttons button {
+    border-radius: 10px;
+}
