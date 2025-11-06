@@ -19,6 +19,9 @@ header, main, footer {
     padding: 5px;
     border-radius: 10px;
 }
+header {
+    color: white;
+}
 
 
 nav li {
@@ -126,6 +129,7 @@ h2 {
     padding:10px;
     background-color: var(--gold);
     border-radius: 10px;
+    color: white;
 }
 
 footer {
