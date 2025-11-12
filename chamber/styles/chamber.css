@@ -10,9 +10,7 @@
     font-variation-settings:
     "wdth" 100;
     max-width: 100%;
-    background-color: var(--yellow);
 }
-
 header, main, footer {
     background-color: var(--yellow2);
     padding: 5px;
@@ -21,7 +19,9 @@ header, main, footer {
 header {
     color: white;
 }
-
+body {
+    background-color: var(--yellow);
+}
 
 nav li {
     margin: 2px 0px;
@@ -96,97 +96,136 @@ nav ul {
         flex-direction: column;
         background-color: var(--yellow2);
     }
-    .courses {
-        display: grid;
-        grid-template-columns: 1fr;
+    .list {
+        max-width: 100%;
     }
-    .course-buttons {
-        display: flex;
-        flex-direction: column;
+    .list section a {
+        font-size: 5px;
     }
 }
 
-.about-me, .student-photo, .courses {
-    margin: auto auto 15px auto;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
+
+@media screen and (min-width: 600px) {
+    #menu {
+        display: none;
+    }
+    .navigation {
+        flex-direction: row;
+        justify-content: space-around;
+        background-color: var(--yellow2);
+    }
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .list {
+        max-width: 70%;
+    }
 }
-.student-photo img {
-    border-radius: 10px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 10px;
-    margin-top: 0;
-}
-h1 {
-    padding-left: 5px;
-    border-radius: 10px;;
-}
-h2 {
-    margin-top: 0;
-    padding:10px;
-    background-color: var(--gold);
-    border-radius: 10px;
-    color: white;
-}
+
+
 
 footer {
     border-radius: 10px;
     border: 2px solid black;
     text-align: center;
+    display: grid;
     
 }
 footer li {
     list-style: none;
+    
+}
+footer div {
     border-radius: 10px;
 }
 footer ul {
-    border-radius: 10px;
+    
     display: flex;
     justify-content: space-around;
     list-style: none;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 footer img {
     max-width: 50px;
     border-radius: 10px;
     list-style: none;
 }
-footer p {
+footer p, footer h3 {
     font-size: 15px;
     border-radius: 10px;
+    color: white;
 }
-.courses button {
+
+.grid div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 15px;
+    align-items: center;
     padding: 10px;
 }
-.active-link {
-    background-color: var(--gold);
-    color:white;
+.list div {
+	display: flex;
+	flex-direction: column;
 }
-.courses button:hover {
-    background-color: var(--gold);
-    color: white;
+.grid section {
+    background-color: var(--yellow);
+    border: 3px solid var(--gold);
+    border-radius: 5px;
 }
-#completed, #completed h3 {
+.grid section h2 {
+    font-weight: 500;
+    text-align: center;
+    width: 100%;
+    padding-top: 10px;
+    margin-top: 0;
+}
+.grid section p, .grid section a {
+    padding: 0px 10px;
+    text-align: center;
+    margin: 0;
+}
+.grid section a {
+    display: block;
+    margin: 0 auto;
+}
+.grid section img {
     background-color: var(--gold);
     border-radius: 10px;
-    color: white;
+    border: 2px solid white;
+    padding: 5px;
+    max-width: 250px;
+    max-height: 300px;
+    display: block;
+    margin: 0 auto;
+    box-shadow: 0 0 1rem #555;
 }
-#completed, #incompleted {
-    margin: 5px;
+.list {
+    margin: 0 auto;
+    
 }
-
-#incompleted, #incompleted h3 {
-    background-color: var(--yellow2);
-    color: white;
-    border-radius: 10px;
+.list section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-top: 0;
+    margin-bottom: 0;
 }
-
-h3 {
-    padding: 0 8px;
+.list section img {
+    display: none;
 }
-
-.course-buttons button {
-    border-radius: 10px;
+.list section h2 {
+    font-size: 15px;
 }
-
+.list section p {
+    font-size: 15px;
+}
+.list .level {
+    display: none;
+}
+.buttons {
+    display: flex;
+    flex-direction: column;
+    max-width: 200px;
+    margin: 0 auto;
+}

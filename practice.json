@@ -1,0 +1,54 @@
+{
+    "family-name": "Aguilar",
+    "move-date": "05-03-2008",
+    "family-members-number": 9,
+    "visited": true,
+    "family-members": [
+    {
+        "name": "Tobias",
+        "gender": "male",
+        "birthdate": "05-03-2003"
+    },
+    {
+        "name": "Lautaro",
+        "gender": "male",
+        "birthdate": "03-28-1997",
+        "isactive": null
+    },
+    {
+        "name": "Agustin",
+        "gender": "male",
+        "birthdate": "05-11-1998"
+    },
+    {
+        "name": "Jeremias",
+        "gender": "male",
+        "birthdate": "01-26-2000"
+    },
+    {
+        "name": "Magali",
+        "gender": "female",
+        "birthdate": "01-26-2000"
+    },
+    {
+        "name": "Sofia",
+        "gender": "female",
+        "birthdate": "05-22-2002"
+    },
+    {
+        "name": "Abigail",
+        "gender": "female",
+        "birthdate": "03-07-2006"
+    },
+    {
+        "name": "Mauro",
+        "gender": "male",
+        "birthdate": "07-11-1973"
+    },
+    {
+        "name": "Julia",
+        "gender": "female",
+        "birthdate": "10-15-1980"
+    }
+    ]
+}
