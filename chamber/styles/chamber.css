@@ -105,23 +105,7 @@ nav ul {
 }
 
 
-@media screen and (min-width: 600px) {
-    #menu {
-        display: none;
-    }
-    .navigation {
-        flex-direction: row;
-        justify-content: space-around;
-        background-color: var(--yellow2);
-    }
-    footer {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-    .list {
-        max-width: 70%;
-    }
-}
+
 
 
 
