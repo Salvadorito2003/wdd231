@@ -19,6 +19,10 @@ header, main, footer {
 header {
     color: white;
 }
+h1 {
+    color: white;
+    text-align: center;
+}
 body {
     background-color: var(--yellow);
 }
@@ -103,11 +107,6 @@ nav ul {
         font-size: 5px;
     }
 }
-
-
-
-
-
 
 footer {
     border-radius: 10px;
