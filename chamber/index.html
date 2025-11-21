@@ -17,6 +17,7 @@
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/home.js" defer></script>
     <script src="scripts/weather.js" defer></script>
+    <script src="scripts/spotlight.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -46,18 +47,23 @@
             </picture>
             <a href="#" id="join-chamber">Join the Chamber of Commerce!</a>
         </div>
+        <h1> Rosario, Argentina </h1>
         <section class="current-event">
 
         </section>
         <section class="weather">
-            <p>The current temperature in Rosario, Argentina is <span id="current-temp"></span></p>
-            <figure>
-                <img id="weather-icon" src="" alt="">
-                <figcaption></figcaption>
-            </figure>
-            <p><span id="tomorrow"></span>: <span id="forecast"></span></p>
-            <p><span id="two-days"></span>: <span id="forecastTwo"></span></p>
-            <p><span id="three-days"></span>: <span id="forecastThree"></span></p>
+            <div class="current-weather">
+                <h2>Current Temperature: <span id="current-temp"></span></h2>
+                <figure>
+                    <img id="weather-icon" src="" alt="">
+                    <figcaption></figcaption>
+                </figure>
+            </div>
+            <div id="forecast-div">
+                <p><span id="tomorrow"></span>: <span id="forecast"></span></p>
+                <p><span id="two-days"></span>: <span id="forecastTwo"></span></p>
+                <p><span id="three-days"></span>: <span id="forecastThree"></span></p>
+            </div>
         </section>
         <section class="spotlights">
 
@@ -73,7 +79,7 @@
         </div>
         <ul>
             <li><a href="#" id="git-hub"><img src="images/github.svg" alt="git-hub-icon"></a></li>
-            <li><a href="www.linkedin.com/in/aguilar-tobias-sj" id="linked-in"><img src="images/linkedin.svg" alt="linked-in-icon"></a></li>
+            <li><a href="https://www.linkedin.com/in/aguilar-tobias-sj" id="linked-in"><img src="images/linkedin.svg" alt="linked-in-icon"></a></li>
             <li><a href="https://www.instagram.com/tobiassjaguilar/" id="instagram"><img src="images/instagram.svg" alt="instagram-icon"></a></li>
         </ul>
         <div id="last-modified">

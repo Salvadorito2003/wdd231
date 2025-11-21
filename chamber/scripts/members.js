@@ -1,6 +1,7 @@
 const jsonDocument = "data/members.json";
 const membersContainer = document.querySelector(".members");
 
+
 const gridButton = document.querySelector("#grid");
 const listButton = document.querySelector("#list");
 const display = document.querySelector(".grid");
@@ -12,7 +13,7 @@ gridButton.addEventListener("click", () => {
 
 listButton.addEventListener("click", () => {
     display.classList.add("list");
-    display.classList.remove("grid)");
+    display.classList.remove("grid");
 });
 
 
@@ -22,6 +23,7 @@ async function getMemberData() {
     const data = await response.json();
     //console.table(data.prophets);
     displayMembers(data.members);
+    displaySpotlight(data.members);
 }
 
 getMemberData();
@@ -60,3 +62,4 @@ const displayMembers = (members) => {
         membersContainer.appendChild(card);
     });
 }
+

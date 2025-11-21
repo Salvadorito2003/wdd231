@@ -14,4 +14,30 @@
     .list {
         max-width: 70%;
     }
+    .weather {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        width: 50%;
+        margin: 0 auto;
+    }
+    .weather h2, .weather figure{
+        grid-column: 1/2;
+        text-align: center;
+    }
+    #forecast-div {
+        grid-column: 2/3;
+        text-align: center;
+    }
+    
+    .spotlights {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin: 0 auto;
+        width: 90%;
+    }
+    .spotlight-card img {
+        margin-left: 10px;
+        margin-right: 10px; 
+    }
 }

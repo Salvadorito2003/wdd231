@@ -97,7 +97,7 @@ nav ul {
     color: var(--yellow);
     background-color: var(--yellow2);
     border-radius: 20px;
-    box-shadow: 5px black;
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.418);
 }
 
 @media screen and (max-width: 600px) {
@@ -244,4 +244,47 @@ footer p, footer h3 {
     flex-direction: column;
     max-width: 200px;
     margin: 0 auto;
+}
+#forecast-div p {
+    font-size: 25px;
+}
+.weather {
+    background-color: var(--yellow);
+    border-radius: 10px;
+    border: 3px solid gray;
+    box-shadow: 5px 10px #505144;
+}
+#forecast-div {
+    background-color: var(--gold);
+    border: 3px solid gray;
+    color: white;
+}
+.current-weather figcaption {
+    font-size: 25px;
+}
+.spotlight-card {
+    margin: 0 auto;
+    border: 3px solid gray;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+    background-color: white;
+    box-shadow: 3px 3px rgba(0, 0, 0, 0.71);
+}
+.spotlight-card img {
+    border: 2px solid black;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+    max-width: 350px;
+}
+.spotlight-card h2, .spotlight-card p, .spotlight-card a {
+    padding-left: 10px;
+}
+.weather h2, .weather figure{
+    text-align: center;
+}
+#forecast-div {
+    text-align: center;
 }
