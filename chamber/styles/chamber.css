@@ -139,6 +139,10 @@ nav ul {
         font-size: 20px;
         padding: 20px;
     }   
+    .spotlights {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 footer {
