@@ -16,7 +16,7 @@ main {
   width: fit-content;
   margin: 1rem auto;
   border: 1px solid rgb(0 0 0 / 10%);
-  border-radius: 10px;
+  border-radius: 10px; 
 }
 
 h1 {

@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Directory - Argentina Chamber of Commerce</title>
-    <meta name="description" content="This page shows what the Chamber of Commerce in Argentina might look like.">
+    <title>Home Page - Argentina Chamber of Commerce</title>
+    <meta name="description" content="This page is the Home Page of the Chamber of commerce in Argentina.">
     <meta name="author" content="Tobias Aguilar">
     <meta property="og:title" content="Argentina Chamber of Commerce">
     <meta property="og:description" content="Learn about the chamber of commerce in Argentina. Find your place in it.">
@@ -15,7 +15,8 @@
     <link rel="stylesheet" href="styles/chamber.css">
     <script src="scripts/date.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
-    <script src="scripts/members.js" defer></script>
+    <script src="scripts/home.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -37,16 +38,30 @@
         </nav>
     </header>
     <main>
-        <h1>Directory</h1>
-        <div class="buttons">
-            <button id="grid">Grid</button>
-            <button id="list">List</button>
+        <div id="hero">
+            <picture id="chamber-img">
+                <source srcset="images/hero.jpg" media="(min-width: 1000px)">
+                <source srcset="images/hero-medium.jpg" media="(min-width: 500px)">
+                <img src="images/hero-small.jpg" alt="Argentina Flag" width="500" height="250">
+            </picture>
+            <a href="#" id="join-chamber">Join the Chamber of Commerce!</a>
         </div>
-        <article class="grid">
-            <div class="members">
-            
-            </div>
-        </article>
+        <section class="current-event">
+
+        </section>
+        <section class="weather">
+            <p>The current temperature in Rosario, Argentina is <span id="current-temp"></span></p>
+            <figure>
+                <img id="weather-icon" src="" alt="">
+                <figcaption></figcaption>
+            </figure>
+            <p><span id="tomorrow"></span>: <span id="forecast"></span></p>
+            <p><span id="two-days"></span>: <span id="forecastTwo"></span></p>
+            <p><span id="three-days"></span>: <span id="forecastThree"></span></p>
+        </section>
+        <section class="spotlights">
+
+        </section>
     </main>
     <footer>
         <div id="chamber-information">
