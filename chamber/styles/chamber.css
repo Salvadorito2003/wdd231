@@ -258,6 +258,7 @@ footer p, footer h3 {
     background-color: var(--gold);
     border: 3px solid gray;
     color: white;
+    text-align: center;
 }
 .current-weather figcaption {
     font-size: 25px;
@@ -285,9 +286,7 @@ footer p, footer h3 {
 .weather h2, .weather figure{
     text-align: center;
 }
-#forecast-div {
-    text-align: center;
-}
+
 main > p {
     color: white;
     text-align: center;
