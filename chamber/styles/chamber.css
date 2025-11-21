@@ -288,3 +288,8 @@ footer p, footer h3 {
 #forecast-div {
     text-align: center;
 }
+main > p {
+    color: white;
+    text-align: center;
+    font-size: 20px;
+}
