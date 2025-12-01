@@ -16,6 +16,7 @@ form h3 {
 }
 form h2 {
     color: white;
+    margin-bottom: 1px;
 }
 
 input[type=text],
