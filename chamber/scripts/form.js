@@ -8,7 +8,7 @@ console.log(myInfo.get('first'));
 console.log(myInfo.get('last'));
 console.log(myInfo.get('email'));
 console.log(myInfo.get('phone'));
-console.log(myInfo.get('business'));
+console.log(myInfo.get('organization'));
 console.log(myInfo.get('timestamp'));
 
 const timestamp = myInfo.get('timestamp'); 
