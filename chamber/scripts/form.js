@@ -19,6 +19,6 @@ document.querySelector("#information").innerHTML = `
 <p>Name: ${myInfo.get('first')} ${myInfo.get('last')}</p>
 <p>Phone Number: ${myInfo.get('phone')}</p>
 <p>Email: ${myInfo.get('email')}</p>
-<p>Business Title: ${myInfo.get('business')}</p>
+<p>Business Title: ${myInfo.get('organization')}</p>
 <p>Date: ${date}</p>
 <p>Time: ${time}</p>`;
