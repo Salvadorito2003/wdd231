@@ -139,6 +139,29 @@ function createCourse (courses) {
     }
 
     courseItem.appendChild(item);
+    courseItem.addEventListener('click', () => {
+        displayCourseDetails(course);
+    });
   });
 
+
 };
+
+const modal = document.querySelector("#course-details");
+
+function displayCourseDetails(course) {
+    modal.innerHTML = '';
+    modal.innerHTML = `
+    <button id="closeModal">❌</button>
+    <h2>${course.subject} ${course.number}</h2>
+    <h3>${course.title}</h3>
+    <p>Credits: ${course.credits}</p>
+    <p>Certificate: ${course.certificate}</p>
+    <p>${course.description}</p>
+    <p>Technologies: ${course.technology.join(', ')}</p>`;
+    modal.showModal();
+    closeModal.addEventListener("click", () => {
+        modal.close();
+    });
+
+}

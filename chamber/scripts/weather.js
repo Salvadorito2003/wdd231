@@ -12,6 +12,20 @@ const myLon = "-60.69973346052616";
 const url = `//api.openweathermap.org/data/2.5/weather?lat=${myLat}&lon=${myLon}&appid=${myKey}`;
 const forecastUrl = `//api.openweathermap.org/data/2.5/forecast?lat=${myLat}&lon=${myLon}&appid=${myKey}`
 
+const tomorrow = document.querySelector("#tomorrow");
+const twoDays = document.querySelector("#two-days");
+const threeDays = document.querySelector("#three-days");
+
+const weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+
+const d = new Date();
+const oneDay = weekday[(d.getDay() + 1) % 7];
+const twoDay = weekday[(d.getDay() + 2) % 7];
+const threeDay = weekday[(d.getDay() + 3) % 7];
+
+tomorrow.innerHTML = oneDay;
+twoDays.innerHTML = twoDay;
+threeDays.innerHTML = threeDay;
 
 
 

@@ -1,0 +1,131 @@
+form {
+    margin: 1rem 2%;
+  
+    label {
+        display: block;
+        font-size: .8rem;
+        color: white;
+        padding-top: .2rem;
+    }
+    h3 {
+        font-size: 1rem;
+        color: white;
+        margin: 1.5rem 0 .2rem 0;
+        border-bottom: 1px solid #eee;
+    }
+  
+    input[type=text],
+    input[type=tel],
+    input[type=date],
+    input[type=email],
+    select {
+        display: block;
+        margin: .1rem 0 1rem 0 ;
+        padding: .3rem;
+        border: 1px solid white;
+        border-radius: 4px;
+        border-left-width: 5px;
+        border-left-color:#555;
+        font-size: 1rem;
+        color: #3D405B;
+        width: 80%;
+    }
+  
+    input:required {border-left-color: #d70000;}
+    input:required:valid{border-left-color: green;}
+  
+    input[type=submit] {
+        border: none;
+        text-align: center;
+        background-color: #3D405B;
+        color: white;
+        border-radius: 1rem;
+        padding: .75rem 1.5rem;
+        width: 80%;
+        font-size: 1.2rem;
+    }
+    input[type=submit]:hover {
+        background-color: #9ea3d6;
+        color: black;
+    }
+    textarea {
+        width: 80%;
+        height: 80px
+    }
+}
+
+#cards div {
+    background-color: rgb(196, 196, 19);
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 25px;
+    border: 1px solid white;
+    margin: 20px;
+
+    animation: fadeColor 3s;
+}
+#cards div:hover {
+    background-color: rgb(235, 235, 27);
+}
+#cards div h3 {
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+#cards div button {
+    margin-top: 0px;
+    margin-bottom: 10px;
+    animation: fadeIn 2s;
+}
+#cards div button a {
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+    animation: fadeIn 4s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+} 
+
+@keyframes fadeColor {
+  from {
+    background-color: var(--yellow2);
+    border: 1px solid var(--yellow2);
+    color: var(--yellow2);
+  }
+  to {
+    background-color: rgb(196, 196, 19);
+  }
+}
+
+@media screen and (max-width: 500px){
+    main {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    
+    form {
+        padding-left: 20px;
+    }
+}
+
+@media screen and (min-width: 500px){
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-span: 20px;
+    }
+    h1 {
+        grid-column: 1/3;
+    }
+    form {
+        padding-left: 20px;
+    }
+}

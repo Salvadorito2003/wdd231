@@ -13,11 +13,10 @@
     <link rel="icon" href="images/favicon.ico">
     <link rel="stylesheet" href="styles/larger.css">
     <link rel="stylesheet" href="styles/chamber.css">
+    <link rel="stylesheet" href="styles/thankyou.css">
     <script src="scripts/date.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
-    <script src="scripts/home.js" defer></script>
-    <script src="scripts/weather.js" defer></script>
-    <script src="scripts/spotlight.js" defer></script>
+    <script src="scripts/form.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -39,36 +38,10 @@
         </nav>
     </header>
     <main>
-        <div id="hero">
-            <picture id="chamber-img">
-                <source srcset="images/hero.jpg" media="(min-width: 1000px)">
-                <source srcset="images/hero-medium.jpg" media="(min-width: 500px)">
-                <img src="images/hero-small.jpg" alt="Argentina Flag" width="500" height="250">
-            </picture>
-            <a href="#" id="join-chamber">Join the Chamber of Commerce!</a>
-        </div>
         <h1>Argentina Chamber of Commerce</h1>
-        <p>Rosario, Buenos Aires</p>
-        <section class="current-event">
+        <div id="information">
 
-        </section>
-        <section class="weather">
-            <div class="current-weather">
-                <h2>Current Temperature: <span id="current-temp"></span></h2>
-                <figure>
-                    <img id="weather-icon" src="#" alt="#">
-                    <figcaption></figcaption>
-                </figure>
-            </div>
-            <div id="forecast-div">
-                <p><span id="tomorrow"></span>: <span id="forecast"></span></p>
-                <p><span id="two-days"></span>: <span id="forecastTwo"></span></p>
-                <p><span id="three-days"></span>: <span id="forecastThree"></span></p>
-            </div>
-        </section>
-        <section class="spotlights">
-
-        </section>
+        </div>
     </main>
     <footer>
         <div id="chamber-information">

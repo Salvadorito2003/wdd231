@@ -104,6 +104,7 @@ nav ul {
         display: flex;
         flex-direction: column;
     }
+    
 }
 
 .about-me, .student-photo, .courses {
@@ -175,6 +176,9 @@ footer p {
 #completed, #incompleted {
     margin: 5px;
 }
+#completed:hover, #incompleted:hover {
+    background-color: #7c7c79;
+}
 
 #incompleted, #incompleted h3 {
     background-color: var(--yellow2);
@@ -189,4 +193,24 @@ h3 {
 .course-buttons button {
     border-radius: 10px;
 }
+#course-details {
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    border: 1px solid gray;
+    width: 90%;
+    max-width: 500px;
+    height: fit-content;
+}
 
+#couse-details::backdrop{
+    background-color: rgba(255, 255, 255, 0.50);
+}
+
+#course-details button {
+    position: absolute;
+    top: 23px;
+    right: 23px;
+    padding: .5rem 1rem;
+    border: 1px solid rgb(0 0 0 / 10%);
+}
