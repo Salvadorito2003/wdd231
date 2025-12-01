@@ -13,6 +13,9 @@ form {
         margin: 1.5rem 0 .2rem 0;
         border-bottom: 1px solid #eee;
     }
+    h2 {
+        color: white;
+    }
   
     input[type=text],
     input[type=tel],
@@ -62,10 +65,10 @@ form {
     text-align: center;
     font-size: 25px;
     border: 1px solid white;
-    margin: 20px;
 
     animation: fadeColor 3s;
 }
+
 #cards div:hover {
     background-color: rgb(235, 235, 27);
 }
