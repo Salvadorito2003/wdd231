@@ -90,6 +90,8 @@ main div h1, main div p {
 }
 #wireframes img {
     margin: 0 auto;
+    border-radius: 10px;
+    border: 1px solid black;
 }
 footer {
     border-radius: 10px;
