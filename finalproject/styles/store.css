@@ -1,6 +1,6 @@
 :root {
     --gray: rgb(110, 110, 110);
-    --blue: #2e6a8d;
+    --blue: #2b6384;
     --gold: #9a930b;
 }
 * {
@@ -101,6 +101,9 @@ footer {
     grid-template-columns: 1fr 1fr 1fr;
     background-color: var(--blue);
 }
+footer h2 {
+    color: white;
+}
 footer li {
     list-style: none;
     
@@ -155,5 +158,9 @@ footer p, footer h3 {
     }
     footer {
         grid-template-columns: 1fr;
+    }
+    #wireframes {
+        display: flex;
+        flex-direction: column;
     }
 }
