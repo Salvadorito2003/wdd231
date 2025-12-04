@@ -1,4 +1,4 @@
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 1025px) {
     #menu {
         display: none;
     }
@@ -39,5 +39,9 @@
     .spotlight-card img {
         margin-left: 10px;
         margin-right: 10px; 
+    }
+    #places {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
 }

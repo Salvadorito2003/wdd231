@@ -1,0 +1,24 @@
+@media screen and (min-width: 641px) {
+    #menu {
+        width: 100%;
+        background-color: var(--yellow2);
+        color:white;
+        font-size: 20px;;
+        border-radius: 10px;
+    }
+    .navigation {
+        display: none;
+        flex-direction: column;
+        background-color: var(--yellow2);
+    }
+    .card {
+        grid-template-areas: 
+        "image name"
+        "image description"
+        "image address"
+        "image button";
+    }
+    .card figure {
+        width: 300px;
+    }
+}

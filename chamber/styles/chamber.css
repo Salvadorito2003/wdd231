@@ -100,7 +100,7 @@ nav ul {
     box-shadow: 5px 5px rgba(0, 0, 0, 0.418);
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 640px) {
     main {
         display: grid;
         grid-template-columns: 1fr;
@@ -295,4 +295,44 @@ main > p {
     color: white;
     text-align: center;
     font-size: 20px;
+}
+
+.card {
+    background-color: var(--yellow);
+    border: 3px solid var(--gold);
+    border-radius: 10px;
+    margin: 1rem;
+    overflow: hidden;
+    display: grid;
+    grid-template-areas: 
+    "name"
+    "image"
+    "description"
+    "address"
+    "button";
+}
+.card h2 {
+    font-size: 400;
+    text-align: center;
+    grid-area: name;
+}
+.card img {
+    width: 100%;
+    margin: 0 auto;
+}
+.card figure {
+    grid-area: image;
+}
+.card address {
+    margin: 5px 15px;
+    text-align: justify;
+    grid-area: address;
+}
+.card p {
+    margin: 5px 15px;
+    text-align: justify;
+    grid-area: description;
+}
+.card button {
+    grid-area: button;
 }
