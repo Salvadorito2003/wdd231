@@ -7,6 +7,25 @@
         justify-content: space-around;
         background-color: var(--yellow2);
     }
+    #join-chamber {
+        position:absolute;
+        padding: 50px;
+        font-size: 50px;
+        list-style: none;
+        text-decoration: none;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        display: none;
+    }
+    #hero:hover #join-chamber {
+        display: block;
+        color: var(--yellow);
+        background-color: var(--yellow2);
+        border-radius: 20px;
+        box-shadow: 5px 5px rgba(0, 0, 0, 0.418);
+    }
     footer {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;

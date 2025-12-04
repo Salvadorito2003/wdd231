@@ -81,24 +81,13 @@ nav ul {
     margin:0 auto;
 }
 #join-chamber {
-    position:absolute;
-    padding: 50px;
+    color: white;
     font-size: 50px;
     list-style: none;
     text-decoration: none;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     text-align: center;
-    display: none;
 }
-#hero:hover #join-chamber {
-    display: block;
-    color: var(--yellow);
-    background-color: var(--yellow2);
-    border-radius: 20px;
-    box-shadow: 5px 5px rgba(0, 0, 0, 0.418);
-}
+
 
 @media screen and (max-width: 640px) {
     main {
@@ -335,4 +324,18 @@ main > p {
 }
 .card button {
     grid-area: button;
+}
+#message {
+    animation: fadeOut 5s;
+    text-align: center;
+    display: none;
+}
+@keyframes fadeOut {
+    from {
+        opacity: 100%;
+        display: inherit;
+    } to {
+        opacity: 0%;
+        display: none;
+    }
 }

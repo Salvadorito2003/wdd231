@@ -1,14 +1,10 @@
 @media screen and (min-width: 641px) {
     #menu {
-        width: 100%;
-        background-color: var(--yellow2);
-        color:white;
-        font-size: 20px;;
-        border-radius: 10px;
+        display: none;
     }
     .navigation {
-        display: none;
-        flex-direction: column;
+        flex-direction: row;
+        justify-content: space-around;
         background-color: var(--yellow2);
     }
     .card {
@@ -20,5 +16,9 @@
     }
     .card figure {
         width: 300px;
+    }
+    .card img:hover {
+        border: 3px solid white;
+        box-shadow: 2px 2px 2px 2px gray;
     }
 }
