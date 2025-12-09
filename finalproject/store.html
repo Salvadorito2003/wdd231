@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="styles/larger.css">
     <script src="scripts/date.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
-    <script src="scripts/stories.js" defer></script>
+
     <script type="module" src="scripts/threeItems.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -33,26 +33,18 @@
         </nav>
     </header>
     <main>
-        <div id="hero">
-            <picture id="chamber-img">
-                <source srcset="images/hero.webp" media="(min-width: 1000px)">
-                <source srcset="images/heromedium.webp" media="(min-width: 600px)">
-                <img src="images/herosmall.webp" alt="Argentina Mission Store" width="500" height="250">
-            </picture>
-            <h1>Argentina Mission Store</h1>
+        <h1>Find your products</h1>
+        <div class="category">
+            <button id="all">All Items</button>
+            <button id="clothes">Clothes</button>
+            <button id="varieties">Varieties</button>
+            <button id="souvenirs">Souvenirs</button>
         </div>
-        <div id="description">
-            <h2>Find what you need</h2>
-            <p>This is the online store that provides all a future missionary needs to go on a mission. Find everything you will need on the same store. We know by personal experience how hard it is to find everything. This store is the solution to that problem!</p>
-        </div>
-        
-        <div id="items">
-            <h2><a href="store.html" alt="store" id="items-link">Get your Items</a></h2>
-        </div>
-        
-        <div id="missionaries-stories">
-            <h2>Missionary-related stories</h2>
-        </div>
+        <article class="all">
+            <div class="items">
+            
+            </div>
+        </article>
     </main>
     <footer>
         <div id="chamber-information">

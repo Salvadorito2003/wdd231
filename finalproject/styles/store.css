@@ -11,7 +11,7 @@
     "wdth" 100;
     max-width: 100%;
 }
-
+/*Navigation */
 nav li {
     margin: 2px 0px;
     list-style: none;
@@ -27,8 +27,7 @@ nav a {
     text-decoration: none;
     color: white;
     box-sizing: border-box;
-    border-radius: 10px;
-    
+    border-radius: 10px; 
 }
 nav a:hover {
     background-color: white;
@@ -54,6 +53,11 @@ nav ul {
     padding:0;
     margin: 0;
 }
+#menu {
+    display: none;
+}
+
+/*Main*/
 
 header, main, footer {
     width: 90%;
@@ -62,6 +66,16 @@ header, main, footer {
 }
 body {
     background-color: var(--gray);
+}
+
+#hero img {
+    width: 100%;
+    border-radius: 25%;
+    height: auto;
+}
+h1 {
+    color:white;
+    text-align: center;
 }
 
 main div {
@@ -76,23 +90,50 @@ main div {
 
     animation: fadeIn 3s;
 }
-main div h1, main div p {
+main div h2 {
     color: white;
     padding: 5px;
 }
-
-#wireframes {
+main div h2 {
+    text-align: center;
+}
+#items, #missionaries-stories {
+    background-color: var(--gold);
+}
+#items h2, #missionaries-stories h2, #items p{
+    color: black;
+}
+#items-link {
+    
+    color: black;
+}
+main {
     display: grid;
-    grid-template-columns: 1fr 1fr;
 }
-#wireframes h1 {
-    grid-column: 1/3;
+#description p {
+    color: white;
+    padding: 20px;
 }
-#wireframes img {
-    margin: 0 auto;
+#items p {
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+}
+#items img {
     border-radius: 10px;
-    border: 1px solid black;
+    border: 1px solid white;
 }
+
+.story-card {
+    background-color: white;
+    border-radius: 10px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+
+/*Footer*/
 footer {
     border-radius: 10px;
     border: 2px solid white;
@@ -128,9 +169,6 @@ footer p, footer h3 {
     font-size: 15px;
     border-radius: 10px;
     color: white;
-}
-#menu {
-    display: none;
 }
 
 @keyframes fadeIn {
