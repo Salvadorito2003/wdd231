@@ -3,9 +3,33 @@ const storiesContainer = document.getElementById("missionaries-stories")
 
 
 async function getStoryData() {
-    const response = await fetch(jsonDocument);
-    const data = await response.json();
-    displayStory(data.stories);
+    try {
+        const cached = localStorage.getItem("storiesCache");
+        if (cached) {
+            const data = JSON.parse(cached);
+            displayStory(data);
+            return;
+        }
+
+
+        const response = await fetch(jsonDocument);
+        if (!response.ok) {
+            throw new Error(`HTTP Error: ${response.status}`);
+        }
+
+        const data = await response.json();
+
+        if (!data.stories) {
+            throw new Error("Invalid JSON format: missing 'stories' array.");
+        }
+
+
+        localStorage.setItem("storiesCache", JSON.stringify(data.stories));
+
+        displayStory(data.stories);
+    } catch (error) {
+        console.error("Error loading stories:", error);
+    }
 }
 
 getStoryData();
@@ -32,3 +56,5 @@ const displayStory = (stories) => {
         storiesContainer.appendChild(card);
     });
 }
+
+
