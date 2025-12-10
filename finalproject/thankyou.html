@@ -15,10 +15,9 @@
     <link rel="stylesheet" href="styles/larger.css">
     <script src="scripts/date.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
-    <script type="module" src="scripts/store.js"></script>
-    <script type="module" src="scripts/itemsform.js"></script>
-    <script src="scripts/timestamp.js" defer></script>
-    <script src="scripts/modal.js" defer></script>
+    <script src="scripts/form.js" defer></script>
+    
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -34,63 +33,12 @@
             </ul>
         </nav>
     </header>
-    <main>
-        <h1>Find your products</h1>
-        <div class="category">
-            <button id="all">All Items</button>
-            <button id="clothes">Clothes</button>
-            <button id="varieties">Varieties</button>
-            <button id="souvenirs">Souvenirs</button>
-        </div>
-        <article class="all">
-            <div class="items">
+    <main id="thankyou">
+        <h1>Argentina Mission Store</h1>
+        <h2>We will contact you soon!</h2>
+        <div id="information">
             
-            </div>
-        </article>
-        <form id="requestForm" method="GET" action="thankyou.html">
-            <fieldset>
-                <legend>Name and Last Name </legend>
-                <label>
-                    <input type="text" name="name" autocomplete="name" title="Your Name and Last Name" required>
-                </label>
-            </fieldset>
-            <fieldset>
-                <legend>Cell Phone </legend>
-                <label>
-                    <input type="tel" name="phone"  autocomplete="tel" title="A Phone Number with dashes" placeholder="2477-55-3355" required>
-                </label>
-            </fieldset>
-            <fieldset>
-                <legend>Postal Code </legend>
-                <label>
-                    <input type="number" name="code" placeholder="2700"  title="Zip Code" required>
-                </label>
-            </fieldset> 
-            <fieldset class="products">
-                <legend>Number of Products </legend>
-                <label> 
-                    <input type="number" id="quantity" name="number-of-products" required>
-                </label>
-                <section id="product-selects"></section>
-            </fieldset>
-            <fieldset>
-                <legend>Specifications: </legend>
-                <label><textarea name="specifications" title="specifications"></textarea></label>
-                <label><input type="datetime-local" id="timestamp" name="timestamp" hidden></label>
-            </fieldset>
-            <input type="submit" value="Send my Request!">
-        </form>
-        <dialog id="confirmDialog">
-            <form method="dialog">
-                <h3>Confirm your request</h3>
-                <p>Are you sure you want to send this form?</p>
-
-                
-                <button value="cancel">Cancel</button>
-                <button id="confirmSubmit" value="confirm">Confirm</button>
-                
-            </form>
-        </dialog>
+        </div>
     </main>
     <footer>
         <div id="chamber-information">

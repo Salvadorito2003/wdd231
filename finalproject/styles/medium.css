@@ -1,4 +1,4 @@
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 400px) {
     main {
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
         column-gap: 20px;
@@ -34,13 +34,10 @@
     main h1, .category, article {
         grid-column: 1/4;
     }
-    #stories-title {
-        grid-column: 1/6;
-    }
     
     .items {
         display: grid;
-        grid-template-columns: auto auto;
+        grid-template-columns: auto;
         column-gap: 20px;
     }
 
@@ -50,9 +47,4 @@
     form {
         grid-column: 4/6;
     }
-    #thankyou {
-        display: flex;
-        flex-direction: column;
-    }
-    
 }

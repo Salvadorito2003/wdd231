@@ -132,6 +132,77 @@ main {
     padding: 10px;
 }
 
+.category {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.items img {
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+    border: 1px solid white;
+}
+
+.items .card {
+    background-color: var(--gold);
+    margin: 20px;
+    border-radius: 10px;
+    border: solid 1px black;
+    box-shadow: rgba(128, 128, 128, 0.255) 5px 5px 2px 2px;
+    max-width: 500px;
+}
+.card:hover {
+    box-shadow: rgba(236, 236, 236, 0.255) 5px 5px 2px 2px;
+}
+.card h2 {
+    color: black;
+}
+.card p {
+    padding: 20px;
+}
+
+/*Form*/
+form {
+    background-color: var(--blue);
+    border-radius: 10px;
+    margin: 10px;
+    border: 1px solid white;
+}
+form label, #product-selects {
+    padding: 20px;
+    
+
+}
+fieldset {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+form input, form select, textarea {
+    width: 90%;
+}
+input:required {border-left-color: #d70000;}
+input:required:valid{border-left-color: green;}
+textarea {
+    height: 100px;
+}
+input[type="submit"] {
+    display: block;
+    margin: 0 auto;
+}
+#thankyou h2, #thankyou p {
+    text-align: center;
+    color: white;
+
+}
+
+legend {
+    color: white;
+}
+
 
 /*Footer*/
 footer {
